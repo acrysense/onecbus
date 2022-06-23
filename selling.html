@@ -20,6 +20,7 @@
 					<picture>
 						<source srcset="img/logotype.svg" media="(min-width: 1200px)">
 						<img src="img/logotype-mobile.svg" alt="ONE COLUMBUS REALTY">
+						<img src="img/logotype-mobile-black.svg" alt="ONE COLUMBUS REALTY" class="header__logotype--menu">
 					</picture>
 				</a>
 				<div class="header__group">
@@ -36,7 +37,7 @@
 							</li>
 						</ul>
 					</nav>
-					<a href="#" class="header__btn btn">Request a call</a>
+					<a href="#" class="header__btn btn popup-btn" data-id="request-call">Request a call</a>
 				</div>
 				<button class="hamburger" id="hamburger-toggle">
 					<span class="hamburger__inner"></span>
@@ -47,6 +48,74 @@
 		</div>
 	</header>
 	<!-- end of header -->
+	<!-- mobile menu -->
+	<div class="mobile-menu" id="mobile-menu">
+		<div class="mobile-menu__wrapper">
+			<a href="#" class="mobile-menu__btn btn">Request a call</a>
+			<nav class="nav mobile-menu__nav">
+				<ul class="nav__list">
+					<li class="nav__item @@buying">
+						<a href="buying.html" class="nav__link">Buying</a>
+					</li>
+					<li class="nav__item nav__item--active">
+						<a href="selling.html" class="nav__link">Selling</a>
+					</li>
+					<li class="nav__item @@about">
+						<a href="about.html" class="nav__link">About us</a>
+					</li>
+				</ul>
+			</nav>
+			<form action="#" class="c-subscribe mobile-menu__subscribe">
+				<input type="text" class="c-subscribe__input" placeholder="Enter Your Email">
+				<button class="c-subscribe__btn btn">Send</button>
+			</form>
+			<ul class="c-contacts c-contacts--black mobile-menu__contacts">
+				<li class="c-contacts__item">
+					<a href="mailto:info@onecbus.com" class="c-contacts__link">
+						<svg class="c-contacts__icon">
+							<use xlink:href="img/sprite.svg#icon-email"></use>
+						</svg>
+						<span>info@onecbus.com</span>
+					</a>
+				</li>
+				<li class="c-contacts__item">
+					<a href="tel:1234567810" class="c-contacts__link">
+						<svg class="c-contacts__icon">
+							<use xlink:href="img/sprite.svg#icon-phone"></use>
+						</svg>
+						<span>(123) 456-7810</span>
+					</a>
+				</li>
+			</ul>
+			<div class="mobile-menu__block">
+				<h3 class="mobile-menu__title">Follow Us</h3>
+				<ul class="c-socials mobile-menu__socials">
+					<li class="c-socials__item">
+						<a href="#" class="c-socials__link" aria-label="Twitter">
+							<svg class="c-socials__icon">
+								<use xlink:href="img/sprite.svg#icon-twitter"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="c-socials__item">
+						<a href="#" class="c-socials__link" aria-label="Instagram">
+							<svg class="c-socials__icon">
+								<use xlink:href="img/sprite.svg#icon-instagram"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="c-socials__item">
+						<a href="#" class="c-socials__link" aria-label="Facebook">
+							<svg class="c-socials__icon">
+								<use xlink:href="img/sprite.svg#icon-facebook"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end of mobile menu -->
 	<!-- main -->
 	<section class="main" id="main" style="background-image: linear-gradient(0deg, rgba(44, 58, 85, 0.75), rgba(44, 58, 85, 0.75)), url(img/selling-bg.jpg);">
 		<div class="container">
@@ -138,6 +207,284 @@
 		</div>
 	</section>
 	<!-- end of save money -->
+	<!-- benefits -->
+	<section class="benefits" id="benefits">
+		<div class="container">
+			<div class="benefits__wrapper">
+				<div class="benefits__left">
+					<div class="section-heading benefits__section-heading">
+						<h2 class="section-heading__title">How we are different from other agencies</h2>
+						<p class="section-heading__description">Full service agents and commission rebates up to <span>2%</span></p>
+					</div>
+				</div>
+				<div class="benefits__right">
+					<div class="benefits__wrap benefits__wrap--desktop">
+						<div class="benefits__block benefits__block--accent">
+							<h3 class="benefits__title">One Columbus Realty</h3>
+							<ul class="benefits__list">
+								<li class="benefits__item">
+									<span>Full service agent</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Personalized home search</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>On-demand private showings</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Valuation and negotiation assistance</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Board package preparation</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Online home buying platform</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Broker style</span>
+									<span class="benefits__value">Patient</span>
+								</li>
+								<li class="benefits__item">
+									<b>Commission rebate</b>
+									<span class="benefits__value">Up to 2%</span>
+								</li>
+							</ul>
+							<p class="benefits__description">Cras dapibus. In ac felis quis tortor malesuada pretium. </p>
+						</div>
+						<div class="benefits__block">
+							<h3 class="benefits__title">Traditional Broker</h3>
+							<ul class="benefits__list">
+								<li class="benefits__item">
+									<span>Full service agent</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Personalized home search</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>On-demand private showings</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Valuation and negotiation assistance</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Board package preparation</span>
+									<span class="benefits__value benefits__value--success">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-mark"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Online home buying platform</span>
+									<span class="benefits__value benefits__value--nope">
+										<svg>
+											<use xlink:href="img/sprite.svg#icon-close"></use>
+										</svg>
+									</span>
+								</li>
+								<li class="benefits__item">
+									<span>Broker style</span>
+									<span class="benefits__value">Pushy</span>
+								</li>
+								<li class="benefits__item">
+									<b>Commission rebate</b>
+									<span class="benefits__value">0%</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="benefits__wrap benefits__wrap--mobile">
+						<div class="benefits-table">
+							<h3 class="benefits-table__title"><b>One Columbus Realty</b> vs. <br>Traditional Broker</h3>
+							<div class="benefits-table__wrapper">
+								<div class="benefits-table__row">
+									<span class="benefits-table__elem"></span>
+									<div class="benefits-table__elem benefits-table__elem--sm">
+										<b class="benefits-table__heading"><span>One</span> Columbus Realty</b>
+									</div>
+									<div class="benefits-table__elem benefits-table__elem--sm">
+										<span class="benefits-table__heading">Traditional Broker</span>
+									</div>
+								</div>
+								<div class="benefits-table__row">
+									<span class="benefits-table__elem">Full service agent</span>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="benefits-table__row">
+									<span class="benefits-table__elem">Personalized home search</span>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="benefits-table__row">
+									<span class="benefits-table__elem">On-demand private showings</span>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="benefits-table__row">
+									<span class="benefits-table__elem">Valuation and negotiation assistance</span>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="benefits-table__row">
+									<span class="benefits-table__elem">Board package preparation</span>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="benefits-table__row">
+									<span class="benefits-table__elem">Online home buying platform</span>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--success">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-mark"></use>
+											</svg>
+										</span>
+									</div>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value benefits-table__value--nope">
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-close"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="benefits-table__row">
+									<span class="benefits-table__elem">Broker style</span>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value">Patient</span>
+									</div>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value">Pushy</span>
+									</div>
+								</div>
+								<div class="benefits-table__row">
+									<span class="benefits-table__elem">Commission rebate</span>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value">Up to 2%</span>
+									</div>
+									<div class="benefits-table__elem">
+										<span class="benefits-table__value">0%</span>
+									</div>
+								</div>
+							</div>
+							<p class="benefits-table__description">Cras dapibus. <br>In ac felis quis tortor malesuada pretium. </p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end of benefits -->
 	<!-- faq -->
 	<section class="faq" id="faq">
 		<div class="container">
@@ -556,6 +903,28 @@
 		</div>
 	</footer>
 	<!-- end of footer -->
+	<!-- popup -->
+	<div class="popup" id="request-call">
+		<div class="popup__scroll">
+			<div class="popup__wrapper">
+				<h3 class="popup__title">Request a call</h3>
+				<p class="popup__description">Fill in all the fields below and we will call you back within 5 minutes</p>
+				<form action="#" class="popup-form popup__form">
+					<div class="input-group popup-form__input">
+						<label for="popup-name" class="input-group__label">Full name</label>
+						<input type="text" class="input-group__input" id="popup-name" required>
+					</div>
+					<div class="input-group popup-form__input">
+						<label for="popup-phone" class="input-group__label">Phone number</label>
+						<input type="tel" class="input-group__input" id="popup-phone" data-inputmask="'mask': '(999) 999-9999'" required>
+					</div>
+					<button class="popup-form__btn btn btn--md">Send</button>
+				</form>
+			</div>
+		</div>
+		<div class="popup__overlay"></div>
+	</div>
+	<!-- end of popup -->
 	<!-- scripts -->
 	<script src="js/vendor.min.js"></script>
 	<script src="js/app.min.js"></script>
