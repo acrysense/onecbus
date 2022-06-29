@@ -51,7 +51,7 @@
 	<!-- mobile menu -->
 	<div class="mobile-menu" id="mobile-menu">
 		<div class="mobile-menu__wrapper">
-			<a href="#" class="mobile-menu__btn btn">Request a call</a>
+			<a href="#" class="mobile-menu__btn btn popup-btn" data-id="request-call">Request a call</a>
 			<nav class="nav mobile-menu__nav">
 				<ul class="nav__list">
 					<li class="nav__item nav__item--active">
@@ -119,7 +119,7 @@
 	<!-- main -->
 	<section class="main" id="main" style="background-image: linear-gradient(0deg, rgba(44, 58, 85, 0.75), rgba(44, 58, 85, 0.75)), url(img/buying-bg.jpg);">
 		<div class="container">
-			<div class="main__wrapper">
+			<div class="main__wrapper main__wrapper--short">
 				<p class="main__description">Full service experienced agents and commission rebates up to 2%. Save thousands when you buy with us</p>
 			</div>
 			<a href="#about-process" class="main__next" aria-label="Опуститься ниже">
@@ -592,145 +592,162 @@
 				<h2 class="section-heading__title">Сustomer reviews</h2>
 				<p class="section-heading__description">Our clients have received over <b>$7,000,000</b> insn rebates</p>
 			</div>
-			<div class="reviews__wrapper">
-				<article class="reviews__item">
-					<picture class="reviews__img">
-						<img src="img/reviews-01.png" alt="Image">
-					</picture>
-					<div class="reviews__body">
-						<div class="reviews__block">
-							<picture class="reviews__ava">
-								<img src="img/user-image.png" alt="Image">
-							</picture>
-							<span class="reviews__name">Martin</span>
+			<div class="reviews__slider">
+				<div class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<article class="reviews__item">
+								<picture class="reviews__img">
+									<img src="img/reviews-01.png" alt="Image">
+								</picture>
+								<div class="reviews__body">
+									<div class="reviews__block">
+										<picture class="reviews__ava">
+											<img src="img/user-image.png" alt="Image">
+										</picture>
+										<span class="reviews__name">Martin</span>
+									</div>
+									<div class="reviews__info">
+										<span class="reviews__help">Greenwich Village</span>
+										<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui.</p>
+										<a href="#" class="reviews__more more-btn">
+											<span>Read full review</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</article>
 						</div>
-						<div class="reviews__info">
-							<span class="reviews__help">Greenwich Village</span>
-							<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui.</p>
-							<a href="#" class="reviews__more more-btn">
-								<span>Read full review</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
-								</svg>
-							</a>
+						<div class="swiper-slide">
+							<article class="reviews__item">
+								<picture class="reviews__img">
+									<img src="img/reviews-02.png" alt="Image">
+								</picture>
+								<div class="reviews__body">
+									<div class="reviews__block">
+										<picture class="reviews__ava">
+											<img src="img/user-image.png" alt="Image">
+										</picture>
+										<span class="reviews__name">Martin</span>
+									</div>
+									<div class="reviews__info">
+										<span class="reviews__help">Greenwich Village</span>
+										<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
+										<a href="#" class="reviews__more more-btn">
+											<span>Read full review</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="reviews__item">
+								<picture class="reviews__img">
+									<img src="img/reviews-03.png" alt="Image">
+								</picture>
+								<div class="reviews__body">
+									<div class="reviews__block">
+										<picture class="reviews__ava">
+											<img src="img/user-image.png" alt="Image">
+										</picture>
+										<span class="reviews__name">Martin</span>
+									</div>
+									<div class="reviews__info">
+										<span class="reviews__help">Greenwich Village</span>
+										<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+										<a href="#" class="reviews__more more-btn">
+											<span>Read full review</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="reviews__item">
+								<picture class="reviews__img">
+									<img src="img/reviews-03.png" alt="Image">
+								</picture>
+								<div class="reviews__body">
+									<div class="reviews__block">
+										<picture class="reviews__ava">
+											<img src="img/user-image.png" alt="Image">
+										</picture>
+										<span class="reviews__name">Martin</span>
+									</div>
+									<div class="reviews__info">
+										<span class="reviews__help">Greenwich Village</span>
+										<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+										<a href="#" class="reviews__more more-btn">
+											<span>Read full review</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="reviews__item">
+								<picture class="reviews__img">
+									<img src="img/reviews-02.png" alt="Image">
+								</picture>
+								<div class="reviews__body">
+									<div class="reviews__block">
+										<picture class="reviews__ava">
+											<img src="img/user-image.png" alt="Image">
+										</picture>
+										<span class="reviews__name">Martin</span>
+									</div>
+									<div class="reviews__info">
+										<span class="reviews__help">Greenwich Village</span>
+										<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
+										<a href="#" class="reviews__more more-btn">
+											<span>Read full review</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="swiper-slide">
+							<article class="reviews__item">
+								<picture class="reviews__img">
+									<img src="img/reviews-01.png" alt="Image">
+								</picture>
+								<div class="reviews__body">
+									<div class="reviews__block">
+										<picture class="reviews__ava">
+											<img src="img/user-image.png" alt="Image">
+										</picture>
+										<span class="reviews__name">Martin</span>
+									</div>
+									<div class="reviews__info">
+										<span class="reviews__help">Greenwich Village</span>
+										<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui.</p>
+										<a href="#" class="reviews__more more-btn">
+											<span>Read full review</span>
+											<svg>
+												<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</article>
 						</div>
 					</div>
-				</article>
-				<article class="reviews__item">
-					<picture class="reviews__img">
-						<img src="img/reviews-02.png" alt="Image">
-					</picture>
-					<div class="reviews__body">
-						<div class="reviews__block">
-							<picture class="reviews__ava">
-								<img src="img/user-image.png" alt="Image">
-							</picture>
-							<span class="reviews__name">Martin</span>
-						</div>
-						<div class="reviews__info">
-							<span class="reviews__help">Greenwich Village</span>
-							<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
-							<a href="#" class="reviews__more more-btn">
-								<span>Read full review</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</article>
-				<article class="reviews__item">
-					<picture class="reviews__img">
-						<img src="img/reviews-03.png" alt="Image">
-					</picture>
-					<div class="reviews__body">
-						<div class="reviews__block">
-							<picture class="reviews__ava">
-								<img src="img/user-image.png" alt="Image">
-							</picture>
-							<span class="reviews__name">Martin</span>
-						</div>
-						<div class="reviews__info">
-							<span class="reviews__help">Greenwich Village</span>
-							<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-							<a href="#" class="reviews__more more-btn">
-								<span>Read full review</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</article>
-				<article class="reviews__item">
-					<picture class="reviews__img">
-						<img src="img/reviews-03.png" alt="Image">
-					</picture>
-					<div class="reviews__body">
-						<div class="reviews__block">
-							<picture class="reviews__ava">
-								<img src="img/user-image.png" alt="Image">
-							</picture>
-							<span class="reviews__name">Martin</span>
-						</div>
-						<div class="reviews__info">
-							<span class="reviews__help">Greenwich Village</span>
-							<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
-							<a href="#" class="reviews__more more-btn">
-								<span>Read full review</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</article>
-				<article class="reviews__item">
-					<picture class="reviews__img">
-						<img src="img/reviews-02.png" alt="Image">
-					</picture>
-					<div class="reviews__body">
-						<div class="reviews__block">
-							<picture class="reviews__ava">
-								<img src="img/user-image.png" alt="Image">
-							</picture>
-							<span class="reviews__name">Martin</span>
-						</div>
-						<div class="reviews__info">
-							<span class="reviews__help">Greenwich Village</span>
-							<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos.</p>
-							<a href="#" class="reviews__more more-btn">
-								<span>Read full review</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</article>
-				<article class="reviews__item">
-					<picture class="reviews__img">
-						<img src="img/reviews-01.png" alt="Image">
-					</picture>
-					<div class="reviews__body">
-						<div class="reviews__block">
-							<picture class="reviews__ava">
-								<img src="img/user-image.png" alt="Image">
-							</picture>
-							<span class="reviews__name">Martin</span>
-						</div>
-						<div class="reviews__info">
-							<span class="reviews__help">Greenwich Village</span>
-							<p class="reviews__description">Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos hymenaeos. Cras id dui.</p>
-							<a href="#" class="reviews__more more-btn">
-								<span>Read full review</span>
-								<svg>
-									<use xlink:href="img/sprite.svg#icon-arrow-more"></use>
-								</svg>
-							</a>
-						</div>
-					</div>
-				</article>
+					<div class="swiper-pagination"></div>
+				</div>
 			</div>
 			<a href="#" class="reviews__btn btn">Read All</a>
 		</div>
